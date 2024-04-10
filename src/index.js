@@ -1,8 +1,8 @@
 
 import app from './app.js'
 
-app.listen(3001)
+import { PORT } from '../config.js'
 
-// localhost:3000
-console.log('Server running on port 3001')
+app.listen(PORT)
 
+console.log('Server on port', PORT)
